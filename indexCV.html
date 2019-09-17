@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yuliya Philippova CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Yuliya Philippova</h1>
+        <h2>Contact Info</h2>
+        <div class="contacts">
+            <p><span>Phone:</span> +375 (29) 5593712</p>
+            <p><span>Email:</span> <a href="mailto: yuliya.tvs@gmail.com">yuliya.tvs@gmail.com</a> </p>
+            <p><span>Skype:</span> yuliya_kazimrichanka</p>
+            <p><span>Linkedin:</span> <a href="https://www.linkedin.com/in/iphilippova/">https://www.linkedin.com/in/iphilippova/</a> </p>
+        </div>
+        <img src="logo.jpg" alt="photo" width="160" height="160">
+    </header>
+    <main>
+        <section>
+            <h2>Summary</h2>
+            <p>I am a nature researcher, and have math mind. <br>
+                Web technologies is one of my hobbies, and I want to be connected with them until retirement.
+                </p>
+            <p>I have begun studying with Javascript, because I wanted to delve into the modern front-end. I also want to learn basic frameworks such as React, Angular, and create great applications with their help.
+                One of my goals is to learn Python for teaching programming of my son).
+                </p>
+            <p>Here, in RS School, I come to get more deep knowledge in Front-end.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <div class="list">
+                <ul>
+                    <li>HTML5, CSS3, Bootstrap, Flexbox, Grids</li>
+                    <li>Javascript, jQuery, AJAX, NodeJS</li>
+                    <li>Abode Photoshop, Figma</li>
+                    <li>English Proficiency: Intermediate+</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Code Examples</h2>
+            <blockquote>
+                <pre>
+// Get data from observation and put them into Excel docs 
+var nodePath = process.argv[0];
+var appPath = process.argv[1];
+var year = process.argv[2];
+                        
+console.log("nodePath: " + nodePath);
+console.log("appPath: " + appPath);
+console.log("year: " + year);
+                        
+var fs = require('fs');
+                        
+var Excel = require('exceljs');
+var workbook = new Excel.Workbook();
+                        
+var sheets = [];
+  
+... 
+    
+sheets.forEach(function (item, i){
+    console.log('\n'+ item.name);
+    getData(item);
+    viewReport(item);
+});
+                        
+workbook.xlsx.writeFile('Наблюдения за уровнем js.xlsx')
+.then (function () {
+    console.log('\n Файл сохранен');
+});                        
+                    </pre>
+            </blockquote>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <div class="list">
+                <ul>
+                    <li>Freelance (2012 to 2014, 2019) as HTML developer. (HTML5, CSS3, Bootstrap)<br>
+                        <a href="https://github.com/YuliyaFilippova/Templates-Layout">https://github.com/YuliyaFilippova/Templates-Layout</a>
+                    </li>
+                    <li>Learning tasks on educational courses in IT-Academy (Native JS, jQuery, Ajax)<br>
+                        <a href="https://github.com/YuliyaFilippova/JS-projects">https://github.com/YuliyaFilippova/JS-projects</a>
+                    </li>
+                    <li>Local tasks in BelGidromet (NodeJS, SQL)
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <div class="edu">
+                <h3>April – July 2019 – Educational Center of HTP “IT Academy”</h3>
+                <div><span>Course:</span> Front end Level 2 </div>
+                <div><span>Description:</span> Web application with Javascript <br>Native JavaScript, Array & Objects, OOP & classes, Scope and hoisting, DOM, Events, Canvas animation, JSON, MVC, AJAX, SPA, jQuery.</div>
+            </div>
+            <div class="edu">
+                <h3>March 2019 – IT School “My Freedom”</h3>
+                <div><span>Course:</span> HTML/CSS course</div>
+                <div><span>Description:</span> Web Layout using HTML5, CSS3. Bootstrap, Flexbox, Grids.</div>
+            </div>
+        </section>
+        <section>
+            <h2>English</h2>
+            <div class="list">
+                <ul>
+                    <li>Minsk Conversation Club, 2018-Nov - 2019-Mar</li>
+                    <li>TED Talks, listening 2-3 per week</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
