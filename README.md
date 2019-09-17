@@ -24,6 +24,37 @@ Here, in RS School, I come to get more deep knowledge in Front-end.
 
 ## Code Examples 
 
+```javascript 
+// Get data from observation and put them into Excel docs 
+var nodePath = process.argv[0];
+var appPath = process.argv[1];
+var year = process.argv[2];
+
+console.log("nodePath: " + nodePath);
+console.log("appPath: " + appPath);
+console.log("year: " + year);
+
+var fs = require('fs');
+
+var Excel = require('exceljs');
+var workbook = new Excel.Workbook();
+
+var sheets = [];
+
+... 
+
+sheets.forEach(function (item, i){
+	console.log('\n'+ item.name);
+	getData(item);
+	viewReport(item);
+});
+
+workbook.xlsx.writeFile('Наблюдения за уровнем js.xlsx')
+.then (function () {
+	console.log('\n Файл сохранен');
+});
+```
+
 ## Experience 
 
 * Freelance (2012 to 2014, 2019) as HTML developer. (HTML5, CSS3, Bootstrap)  
@@ -45,6 +76,6 @@ Description: Web Layout using HTML5, CSS3. Bootstrap, Flexbox, Grids.
 
 ## English 
 
-* English Proficiency: Intermediate
+* English Proficiency: Intermediate+
 * Minsk Conversation Club, 2018-Nov - 2019-Mar  
 * TED Talks, listening 3-4 per week 
